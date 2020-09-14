@@ -128,19 +128,15 @@ Compare models train all models in library and evaluate metrics on K-Fold cross 
 		unseen_predictions.head()
 		```
 		![](.img/unseen_predictions_head.png)
-	4. saving the model
+	4. saving the model: Se guarda como `Final RF Model 12Set2020.pkl`
 		```py
 		save_model(final_rf,'Final RF Model 12Set2020')
 		```
 		![](.img/save_model_finalrf.png)
 	5. loading the saved model
-		1. Guardamos como: `Final RF Model 12Set2020.pkl`	
-			```py
-			saved_final_rf = load_model('Final RF Model 12Set2020')
-			```
-		2. importando
-			```py
-			new_prediction = predict_model(saved_final_rf, data=data_unseen)
-			new_prediction.head()
-			```
-			![](.img/new_prediction_head.png)
+		```py
+		saved_final_rf = load_model('Final RF Model 12Set2020')
+		new_prediction = predict_model(saved_final_rf, data=data_unseen)
+		new_prediction.head()
+		```
+		![](.img/new_prediction_head.png)
