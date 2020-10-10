@@ -32,7 +32,7 @@
 	```py
 	from selenium import webdriver
 	browser = webdriver.Firefox(firefox_binary="/usr/bin/firefox-esr")
-	browser.get('http://seleniumhq.org/')
+	browser.get('https://www.hackspace.pe/')
 	print(browser.title)
 	```
 2. Output
